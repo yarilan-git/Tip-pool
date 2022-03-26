@@ -4,6 +4,7 @@ let serverForm = document.getElementById('serverForm');
 let serverTbody = document.querySelector('#serverTable tbody');
 
 let allServers = {};
+
 let serverId = 0;
 
 serverForm.addEventListener('submit', submitServerInfo);
@@ -28,7 +29,7 @@ function submitServerInfo(evt) {
 
 // Create table row element and pass to appendTd function with input value
 function updateServerTable() {
-  console.log("in update server table");
+  
   serverTbody.innerHTML = '';
 
   for (let key in allServers) {
