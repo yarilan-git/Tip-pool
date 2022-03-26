@@ -11,7 +11,8 @@ describe("Helpers tests", function() {
         let totalTipPercent  = sumPaymentTotal('tipPercent');
         expect(totalBill).toBe(200);
         expect(totalTip).toBe(40);
-        expect(totalTipPercent).toBe(40);   
+        expect(totalTipPercent).toBe(40);  
+        allPayments = {}; 
     });
 
     //------------------------------------------------
@@ -27,5 +28,7 @@ describe("Helpers tests", function() {
         appendTd(trEl, '150');
         expect(trEl.querySelector("td").innerText).toBe('150');      
     });
+
+    
 
 })
